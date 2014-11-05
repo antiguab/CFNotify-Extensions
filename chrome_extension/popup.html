@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CFNotify</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+
+    <style>
+      html, body {
+        height: 500px;
+        overflow-y: scroll;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        margin: 0;
+        min-width: 400px;
+        overflow-x: hidden;
+        padding: 20px;
+        background-color: #ecf0f1;
+      }
+
+      h1 {
+        color: #e74c3c;
+        font-size: 30px;
+        font-weight: lighter;
+        padding-bottom: 10px;
+        padding-left:0px ;      
+      }
+
+      h1.first_half{
+        font-weight: 700;
+        display: inline;
+        color: #FF1300;
+      }
+
+      h1.second_half{
+        font-weight: 300;
+        display: inline;
+        color: #000000;
+      }
+      
+      div.blackbar{
+        border-bottom: 1px solid #000000;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0;
+      }
+
+      p {
+        color: #999;
+        font-size: 14px;
+        margin: 0;
+      }
+
+      div.post {
+        margin: 20px 0 0;
+        padding: 0 0 0 45px;
+        position: relative;
+      }
+
+      span.avatar img {
+          border-radius: 15px;
+          height: 30px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 30px;
+      }
+      
+    </style>
+
+    <div class="blackbar"><h1 class="first_half">CF</h1><h1 class="second_half">Notify</h1></div>
+    <div class="posts"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+
