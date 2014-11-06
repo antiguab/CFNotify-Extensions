@@ -30,7 +30,7 @@ var addPost = function(post) {
   var postDOM = document.createElement("div"); 
   postDOM.classList.add("post");
     postDOM.innerHTML += "<h2> Request ID: " + post.request_id + "</h2>";
-    postDOM.innerHTML += "<p> Status: " + post.content + "</p>";
+    postDOM.innerHTML += "<p> Status: " + post.status + "</p>";
     postDOM.innerHTML += "<span class='avatar'><img src='icon-64.png'></span>";
     posts.insertBefore(postDOM, posts.firstChild);
 };

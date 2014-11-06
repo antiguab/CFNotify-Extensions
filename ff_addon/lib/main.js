@@ -1,7 +1,7 @@
 
 
 //Required Modules
-var ToggleButton = require('sdk/ui/button/toggle');
+var togglebuttons = require('sdk/ui/button/toggle');
 var self = require("sdk/self");
 var panels = require("sdk/panel");
 var timers = require("sdk/timers");
@@ -19,7 +19,7 @@ var popup = panels.Panel({
 
 //Button Configuration========
 //Appears in toolbar, and is clicked to display popup above
-var button = ToggleButton({
+var button = togglebuttons.ToggleButton({
   id: "cfnotify",
   label: "CFNotify",
   icon: {
