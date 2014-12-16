@@ -1,5 +1,5 @@
 var posts;
-
+var baseUrl = "http://cfnotifyserver-bantigua.rhcloud.com";
 //Initialize when the page is loaded
 window.addEventListener("load", function load(event){
     window.removeEventListener("load", load, false); //remove listener, no longer needed
@@ -16,7 +16,7 @@ var init = function() {
   posts = document.querySelector(".posts");
 
   // Request most recent Statuses
-  $.getJSON("http://still-everglades-1007.herokuapp.com/statuses.json", function(posts) {
+  $.getJSON(baseUrl + "/statuses.json", function(posts) {
     // Reverse posts
     posts.reverse();
     for (var i = 0; i < 10; i++) {
@@ -41,7 +41,7 @@ var addPostFromStatus = function(status) {
   var postDOM = document.createElement("div"); 
   postDOM.classList.add("post");
   var request;
-  $.getJSON("http://still-everglades-1007.herokuapp.com/requests/"+status.request_id+".json", function(request) {
+  $.getJSON(baseUrl + "/requests/"+status.request_id+".json", function(request) {
     postDOM.innerHTML += "<h2> Request ID: " + request.cfid + "</h2>";
     postDOM.innerHTML += "<p> Status: " + status.content + "</p>";
     postDOM.innerHTML += "<span class='avatar'><img src='icon-64.png'></span>";

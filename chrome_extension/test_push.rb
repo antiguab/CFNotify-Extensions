@@ -1,3 +1,5 @@
+#test script for pusher functionality
+
 require 'pusher'
 
 Pusher.url = "http://19a6c30b18c4c19e98f3:337a099ecf29dd0bc98d@api.pusherapp.com/apps/94226"

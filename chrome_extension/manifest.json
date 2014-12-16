@@ -16,7 +16,7 @@
     "notifications",
     "storage",
     "http://localhost/*",
-    "http://still-everglades-1007.herokuapp.com/*",
+    "http://cfnotifyserver-bantigua.rhcloud.com/*",
     "http://fonts.googleapis.com/*"
   ],
   "browser_action": {
